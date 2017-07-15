@@ -1,0 +1,151 @@
+@import url(m_style.css);
+.full(@w, @h, @c) {
+    width: @w;
+    height: @h;
+    background: @c;
+}
+html,
+body,
+.container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.box(@dir:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.container {
+    .box(vertical);
+    
+    header
+    {
+        .full(100%,0.93rem,#4194f0);
+        .box;
+        img
+        {
+            margin-left: 0.27rem;
+            width: 0.4rem;
+            height: 0.34rem;
+         margin-top: 0.26rem;
+        }
+        span
+        {
+            font-size: 0.34rem;
+            color: white;
+            padding-top: 0.20rem;
+            display: block;
+            padding-left: 1.24rem;
+            
+        }
+    }
+   section
+    {
+        -webkit-box-flex: 1;
+        .full(100%,120rem,none);
+        overflow: auto;
+        .one
+        {
+            .full(100%,0.9rem,#f3f3f5);
+            .box;
+            input
+            {
+                background: url(../img/是.jpg) no-repeat;
+                width: 5.2rem;
+                height: 0.58rem;
+                margin-top:0.15rem ;
+                margin-left: 0.3rem;
+                padding-left: 0.7rem;
+                border-radius: 10px;
+                
+            }
+        }
+        .two
+        {
+            .full(100%,1.18rem,none);
+           p
+           {
+               font-size:0.2rem ;
+               color: #f3f3f5;
+               padding-left: 0.5rem;
+               padding-top: 0.25rem;
+               
+           }
+           a
+           {
+               font-size: 0.3rem;
+               color: dodgerblue;
+               padding-left: 0.5rem;
+               //padding-top: 0.25rem;
+           }
+        }
+        .six
+        {
+            .full(5.9rem,0.45rem,#f3f3f5);
+                    -webkit-box-flex: 1;
+            p
+            {
+                padding-top: 0.1rem;
+                padding-left: 0.3rem;
+                font-size: 0.25rem;
+                text-shadow: 2px 1px #666;
+            }
+            ul
+            {
+                li
+                {
+                    a
+                    {
+                        color: blue;
+                    }
+                    line-height: 1rem;
+                    border: 1px solid #e5e9ec;
+                    border-right: none;
+                    padding-left: 0.3rem;
+                    background: #ffffff;
+                }
+               span
+                {
+                    background: #f3f3f5;
+                    display: block;
+                    padding-top: 0.1rem;
+                padding-left: 0.3rem;
+                font-size: 0.25rem;
+                text-shadow: 2px 1px #666;
+                }
+            }
+        }
+        .seven
+        {
+            .full(5.9rem,0.45rem,#f3f3f5);
+        }
+        
+    }
+}
+.tu
+{
+     
+    position: fixed;
+    left: 2.83rem;
+    top: 43%;
+    ul
+    {
+        li
+        {
+            padding-top: 0;
+        }
+    }
+}
+.dw
+{
+     .full(30px,396px,none);
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    img
+    {
+        height: 0.3rem;
+        width: 0.4rem;
+        margin-left:0.05rem;
+    }
+}

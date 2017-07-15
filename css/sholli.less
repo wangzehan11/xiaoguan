@@ -1,0 +1,116 @@
+@import url(m_style.css);
+.full(@w, @h, @c) {
+    width: @w;
+    height: @h;
+    background: @c;
+}
+html,
+body,
+.container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.box(@dir:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.container {
+    .box(vertical);
+    
+    header
+    {
+        .full(100%,0.93rem,#4194f0);
+        .box;
+        img
+        {
+            margin-left: 0.27rem;
+            width: 0.4rem;
+            height: 0.34rem;
+         margin-top: 0.26rem;
+        }
+        span
+        {
+            font-size: 0.34rem;
+            color: white;
+            padding-top: 0.20rem;
+            display: block;
+            padding-left: 1.24rem;
+        }
+    }
+   section
+    {
+        -webkit-box-flex: 1;
+        .full(100%,120rem,none);
+        overflow: auto;
+        .one
+        {
+            .full(100%,0.9rem,#f3f3f5);
+            .box;
+            input
+            {
+                background: url(../img/是.jpg) no-repeat;
+                width: 5.2rem;
+                height: 0.58rem;
+                margin-top:0.15rem ;
+                margin-left: 0.3rem;
+                padding-left: 0.7rem;
+                
+            }
+        }
+        .two
+        {
+            .full(100%,1.18rem,none);
+           p
+           {
+               font-size:0.2rem ;
+               color: #f3f3f5;
+               padding-left: 0.5rem;
+               padding-top: 0.25rem;
+               
+           }
+           a
+           {
+               font-size: 0.3rem;
+               color: dodgerblue;
+               padding-left: 0.5rem;
+               //padding-top: 0.25rem;
+           }
+        }
+        .six
+        {
+            .full(5.9rem,0.45rem,#f3f3f5);
+                    -webkit-box-flex: 1;
+           
+            ul
+            {
+                
+                li
+                {
+                    
+                    a
+                    {
+                        color: blue;
+                    }
+                    line-height: 1rem;
+                    border: 1px solid #e5e9ec;
+                    border-right: none;
+                    padding-left: 0.3rem;
+                    background: #ffffff;
+                    img
+                    {
+                       
+                           margin-left: 3rem;
+                           -webkit-box-flex: 1;
+                    }
+                }
+               
+            }
+        }
+        .seven
+        {
+            .full(5.9rem,0.45rem,#f3f3f5);
+        }
+        
+    }
+}
